@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    overflow-y: hidden;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    max-height: 1440px;
+    height: 100vh;
+    border: 1px solid black;
+
+}
+.dashboard img{
+    width: 650px;
+    height:100%;
+}
