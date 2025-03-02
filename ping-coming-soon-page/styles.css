@@ -26,6 +26,9 @@ body {
     border: 1px solid black;
 
 }
+.brand-img{
+    margin-bottom: 80px;
+}
 h1{
     color: hsl(0, 0%, 59%);
 
