@@ -29,12 +29,24 @@ body {
 .brand-img{
     margin-bottom: 80px;
 }
+
 h1{
     color: hsl(0, 0%, 59%);
-
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 41px;
+    margin-top: -33px;
     & span{
-        color: hsl(209, 33%, 12%)
+        color: hsl(209, 33%, 12%);
+        font-weight: 700;
     }
+}
+.text {
+    padding-bottom: 57px;
+    margin-top: -25px;
+    font-size: 20px;
+    font-weight: 100;
 }
 .notify{
     display: flex;
