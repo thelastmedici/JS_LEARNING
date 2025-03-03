@@ -50,6 +50,22 @@ h1{
 }
 .notify{
     display: flex;
+    gap: 40px;
+
+    & input{
+        border-radius: 50px;
+        padding: 20px;
+        width: 405px;
+    }
+    & button{
+        background-color:hsl(223, 87%, 63%);
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 50px;
+        padding: 20px 40px;
+        cursor: pointer;
+    }
 }
 .dashboard img{
     width: 650px;
