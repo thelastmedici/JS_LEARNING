@@ -61,6 +61,10 @@ h1{
         padding-left: 20px;
         width: 323px;
         border: 2px solid hsl(0, 0%, 90%);
+        &::placeholder{
+            color: hsl(0, 0%, 90%);
+            font-size: 15px;
+        }
     }
     & button{
         background-color:hsl(223, 87%, 63%);
