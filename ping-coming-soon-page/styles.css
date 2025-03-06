@@ -123,3 +123,44 @@ footer{
         }
     }
 }
+
+@media (max-width: 653px) {
+    body{
+        flex-direction: column;
+        padding-left: 2px;
+    }
+    .container{
+        height: 100vh;
+        padding-top: 60px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .dashboard img{
+        width: 100%;
+    }
+    .notify{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        & input{
+            width: 100%;
+        }
+        & button{
+            width: 100%;
+        }
+    }
+    .social-media{
+        margin-top: 20px;
+    }
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
