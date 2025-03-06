@@ -150,6 +150,8 @@ footer{
         padding: 20px;
         & input{
             width: 100%;
+            padding-right: 216px;
+            text-align: left;
         }
         & button{
             width: 100%;
