@@ -97,7 +97,7 @@ h1{
         width: 30px;
         height: 30px;
         padding: 5px;
-        border: 1px solid hsl(0, 0%, 59%);
+        border: .5px solid hsl(0, 0%, 92%);
         border-radius: 50%;
 
     }
@@ -107,4 +107,19 @@ h1{
     color:hsl(0, 0%, 59%);
     text-align: center;
     margin-top: 20px;
+}
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    a{
+        color: hsl(354, 100%, 66%);
+        text-decoration: none;
+        &:hover{
+            color: hsl(223, 87%, 63%);
+        }
+    }
 }
