@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let isValid = True;
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
      if(!email.value.match(emailPattern)){
-      emailError.textContent = "Looks like this is not an email";
+      errorMsg.innerHTML = "<p>Please enter a valid email address</p>";
       email.classList.add('input-error');
       isValid = false;
      }
