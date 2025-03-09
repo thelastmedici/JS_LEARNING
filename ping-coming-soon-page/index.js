@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     notifyBtn.addEventListener('click', function(e) {
         e.preventDefault();
         
-        console.log(" add email");
+        let isValid = True;
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+     if(!email.value.match(emailPattern)){
+      emailError.textContent = "Looks like this is not an email";
+      email.classList.add('input-error');
+      isValid = false;
+     }
     });
 } );
