@@ -1,16 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const mail = document.getElementById('email');
+    const email = document.getElementById('email');
     const errorMsg = document.getElementById('emailError');
     const notifyBtn = document.querySelector('.notifyBtn');
+
     notifyBtn.addEventListener('click', function(e) {
         e.preventDefault();
         
-        let isValid = True;
-        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-     if(!email.value.match(emailPattern)){
-      errorMsg.innerHTML = "<p>Please enter a valid email address</p>";
-      email.classList.add('input-error');
-      isValid = false;
-     }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/;
+        
+        if (!email.value.match(emailPattern)) {
+            errorMsg.textContent = "Please provide a valid email address";
+            errorMsg,style.display = "block";
+            email.style.border = "2px solid red";
+        
+        } else {
+            errorMsg.textContent = "";
+            errorMsg.style.displa
+            email.style.border = "2px solid hsl(0, 0%, 90%)";
+        }
     });
-} );
+});

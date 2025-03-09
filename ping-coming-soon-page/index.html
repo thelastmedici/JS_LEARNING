@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="./images/logo.svg" alt="Ping Logo" class="brand-img">
 
-  <div class="container">
-    <div class="brand-img">
-      <img src="./images/logo.svg" alt="logo-image">
-    </div>
-    <h1 class="header">We are launching <span>soon!</span></h1>
-    <p class="text">Subscribe and get notified</p>
+        <!-- Main Heading -->
+        <h1>We are launching <span>soon!</span></h1>
+        <p class="text">Subscribe and get notified</p>
 
-    <div class="notify">
-      <form action="" class="notifyForm">
-      <input type="email" id="email" name="email" placeholder="Your email address">
-      <span id="emailError" class="error-message"></span>
-      <button class="notifyBtn">Notify Me</button>
-      
-      </form>
+        <!-- Notification Form -->
+        <div class="notify">
+            <div class="input-container">
+                <input type="email" id="email" placeholder="example@email.com">
+                <p id="emailError" class="error-message"></p>
+            </div>
+            <button class="notifyBtn">Notify Me</button>
+        </div>
+
+        <!-- Dashboard Image -->
+        <div class="dashboard">
+            <img src="./images/illustration-dashboard.png" alt="Dashboard Preview">
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="#"><img src="./images/211902_social_facebook_icon.svg" alt="Facebook"></a>
+            <a href="#"><img src="./images/1851691_media_network_social_social media_tweet_icon.svg" alt="Twitter"></a>
+            <a href="#"><img src="./images/1646917_instagram_photo_icon.svg" alt="Instagram"></a>
+        </div>
+
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+
+        <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/thelastmedici">thelastmedici</a>.
+        </p>
+      </footer>
       
     </div>
-    <div class="dashboard">
-      <img src="./images/illustration-dashboard.png" alt="illustration-dashboard">
-    </div>
+
     
-    <div class="social-media">
-        <a href="#"><img src="./images/211902_social_facebook_icon.svg" width="40"  alt="facebook-icon"></a>
-        <a href="#"><img src="./images/1851691_media_network_social_social media_tweet_icon.svg" width="40"  alt="twitter-icon"></a>
-        <a href="#"><img src="./images/1646917_instagram_photo_icon.svg" width="40" alt="instagram-icon"></a>
-    </div>
-    <div class="copyright">
-      &copy; Copyright Ping. All rights reserved.
-    </div>
-  </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/thelastmedici">thelastmedici</a>.
-    </p>
-  </footer>
-
-  <script src="./index.js">
-  </script>
+    <script src="./index.js"></script>
 </body>
 </html>
