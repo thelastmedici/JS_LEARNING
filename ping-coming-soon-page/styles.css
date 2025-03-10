@@ -131,7 +131,11 @@ button:hover {
     margin-top: 20px;
 }
 footer{
-    margin-top: 10px;
+    margin-top: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+
 }
 
 /* Responsive Design */
