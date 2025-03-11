@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     notifyBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        let isValid = true;
         const emailPattern = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/;
         
         if (!email.value.match(emailPattern)) {
@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
             errorMsg.textContent = "";
             errorMsg.style.display = "none";
             email.style.border = "2px solid hsl(0, 0%, 90%)";
+        }
+        if (isValid){
+            // Send email notification here
+            alert("Email notification sent successfully");
+            email.value = '';
         }
     });
 });
