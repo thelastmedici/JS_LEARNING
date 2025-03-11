@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else {
             errorMsg.textContent = "";
-            errorMsg.style.displa
+            errorMsg.style.display = "none";
             email.style.border = "2px solid hsl(0, 0%, 90%)";
         }
     });
