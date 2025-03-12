@@ -123,7 +123,22 @@ button:hover {
 
 .social-media img:hover {
     background-color: hsl(223, 87%, 63%);
+    
 }
+/* .social-media a img{
+    transition: opacity 0.3s ease-in-out;
+} */
+.social-media a:nth-of-type(1):hover img{
+    background-color:  hsl(223, 87%, 63%);
+    content: url('/images/color_less/3057625_facebook_media_network_social_icon.png');
+}
+.social-media a:nth-of-type(2):hover img{
+    content: url('/images/color_less/4375119_logo_twitter_icon.png');
+}
+.social-media a:nth-of-type(3):hover img{
+    content: url('/images/color_less/9111277_instagram_icon.png');
+}
+
 
 .copyright {
     font-size: 12px;
