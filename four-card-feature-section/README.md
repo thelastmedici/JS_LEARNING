@@ -18,7 +18,7 @@ The user will be able to:
 
 ## Where to find everything
 
-this task is to build out the project to the designs inside the `/design` folder.  Both the mobile and a desktop version of the design. 
+This task is to build out the project to the designs inside the `/design` folder.  Both the mobile and a desktop version of the design. 
 
 The designs are in JPG static format. I will be using my intuition for best judgment for styles such as `font-size`, `padding` and `margin`. 
 
