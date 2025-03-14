@@ -21,22 +21,25 @@ body{
 }
 header{
     padding: 15px;
-
-    & p{
-        text-align: center;
-        font-weight: 100;
-        font-size: 16px;
-        font-family: 'Poppins';
-        padding-top: 10px;
-        line-height: 1.25rem;
-    }
 }
-h1{
-    font-size: 23px;
+header p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins';
+    padding-top: 10px;
+    line-height: 1.25rem;
+}
 
-    & span{
-        color: hsl(212, 6%, 44%);
-        font-weight: 400;
-    }
-   
+h1{
+    font-size: 22px;
+}
+
+h1 span{
+    color: hsl(212, 6%, 44%);
+    font-weight: 400;
+}
+
+.supervisor{
+    border: 1px solid black;
 }
