@@ -42,8 +42,13 @@ h1 span{
 
 .supervisor{
     border: 1px solid black;
-    padding: 15px;    
+    padding: 15px;
+    margin: 20px;
+    border-radius:5px;   
+}
+.supervisor p{
+    color: hsl(212, 6%, 44%);
 }
 .supervisor .image{
-    padding-left: 200px;
+    padding-left: 150px;
 }
