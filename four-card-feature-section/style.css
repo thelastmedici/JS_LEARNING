@@ -110,7 +110,6 @@ h1 span{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
-        gap: px;
         max-width: 1000px;
     }
     header {
