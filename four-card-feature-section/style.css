@@ -131,7 +131,9 @@ h1 span{
         font-size: 14px;
         font-family: 'Poppins';
         padding-top: 10px;
+        padding-left: -3pc;
         margin-left: 42px;
+        margin-right: 13px;
         line-height: 1.25rem;
         color: hsl(212, 6%, 44%);
     }
