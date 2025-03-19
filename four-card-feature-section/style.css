@@ -121,8 +121,19 @@ h1 span{
         margin-left: 80px;
         padding-left: 197px;
     }
+  
     h1{
         font-size: 32px;
+    }
+    header p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: 'Poppins';
+        padding-top: 10px;
+        margin-left: 42px;
+        line-height: 1.25rem;
+        color: hsl(212, 6%, 44%);
     }
     
 }
