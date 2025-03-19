@@ -111,7 +111,10 @@ h1 span{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
         max-width: 1000px;
+        margin-top: 0px;
+        overflow-y: hidden;
     }
+
     header {
         grid-column: 1 / span 3;
         text-align: center;
