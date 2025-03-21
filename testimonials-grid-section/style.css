@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color:hsl(260, 100%, 95%)
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+}
