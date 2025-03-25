@@ -33,6 +33,9 @@ body {
 .first-card{
     background-color: hsl(264, 82%, 70%);
 }
+span{
+    font-weight: 700;
+}
 .profile{
     display: flex;
 }
