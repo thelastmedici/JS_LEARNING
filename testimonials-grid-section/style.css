@@ -28,10 +28,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .first-card{
-    background-color: hsl(264, 82%, 70%);
+    background-color: hsl(263, 55%, 52%);
 }
 span{
     font-weight: 700;
@@ -57,6 +58,7 @@ img{
 }
 .third-card{
     background-color: hsl(0, 0%, 100%);
+    color: black;
 }
 .fourth-card{
     background-color:hsl(219, 29%, 14%);
@@ -64,6 +66,17 @@ img{
 }
 .fifth-card{
     background-color:hsl(0, 0%, 100%);
+    color: black;
+}
+
+
+@media (min-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 765px;
+        flex-direction: row;
+    }
 }
 
 .attribution {
