@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  
   <title>Frontend Mentor | Contact form</title>
-
-  
+ 
 </head>
 <body>
 
@@ -17,38 +14,42 @@
     <div class="header"><h1>Contact Us</h1></div>
     <div class="name">
       <div class="F-name">
-        <p>First Name  *</p>
+        <h2>First Name  *</h2>
         <input type="text" required>
       </div>
       <!-- This field is required -->
       <div class="L-name">
-        <p>Last Name *</p>
+        <h2>Last Name *</h2>
         <input type="text" required>
       </div>
     </div>
     <!-- This field is required -->
-    <p>Email Address *</p>
+    <h2>Email Address *</h2>
     <input type="email" required>
     <!-- Please enter a valid email address -->
     <!-- This field is required -->
     <div class="query-section">
-      <p>Query Type *</p>
+      <h2>Query Type *</h2>
       <div class="query-check">
-       <input type="checkbox" name="General Enquiry">  
-        <input type="checkbox" name="Support Request">
+       <div class="enquiry">
+        <input type="checkbox" name="General Enquiry">
+        <h3>General Enquiry</h3>
+      </div>
+        <input type="checkbox" name="" >
+        <h3>Support Request</h3>
       </div>
     </div>
     
     <!-- Please select a query type -->
     <div class="message">
-      <p>Message *</p>
+      <h2>Message *</h2>
       <textarea required></textarea>
       <!-- This field is required -->
     </div>
   <div class="consent">
     <input type="checkbox" required>
     <!-- This field is required -->
-    <p>I consent to being contacted by the team</p>
+    <p>I consent to being contacted by the team *</p>
        <!-- To submit this form, please consent to being contacted -->
   </div>
    
