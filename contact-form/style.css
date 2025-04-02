@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    width: 100%;
+    width: 70%;
     height: 90vh;
     max-width: 375px;
     padding: 14px;
@@ -30,9 +30,27 @@ body{
 
 h1{
     color: hsl(187, 24%, 22%);
+    margin-bottom: 2rem;
     font-size: 2rem;
 }
 h2{
-    color: hsl(169, 82%, 27%);
+    color: hsl(187, 24%, 22%);
+    margin: .5rem 0rem .5rem 0rem;
     font-size: 0.75rem;
+}
+h2 >span{
+    color:hsl(186, 15%, 59%);
+}
+input, textarea {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    font-size: .5rem;
+    border: 1.75px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical; 
 }
