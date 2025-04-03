@@ -32,12 +32,15 @@
     <div class="query-section">
       <h2>Query Type <span>*</span></h2>
       <div class="query-check">
-       <div class="enquiry">
-        <input type="checkbox" name="General Enquiry">
-        <h3>General Enquiry</h3>
-      </div>
-        <input type="checkbox" name="" >
-        <h3>Support Request</h3>
+        <label class="query-option">
+          <input type="radio", name="queryType" value="General Inquiry" required>
+          <span>General Enquiry</span>
+        </label>
+
+        <label class="query-option">
+          <input type="radio", name="queryType" value="Support Request" required>
+          <span>Support Request</span>
+        </label>
       </div>
     </div>
     

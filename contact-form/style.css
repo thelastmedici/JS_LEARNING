@@ -17,15 +17,13 @@ body{
 }
 
 .container{
-    width: 70%;
-    height: 90vh;
+    width: 100%;
+    height: auto;
     max-width: 375px;
     padding: 14px;
     margin: 30px;
     border-radius:15px;
     background-color: hsl(0, 0%, 100%);
-    justify-content : center;
-    align-items: center;
 }
 
 h1{
@@ -54,3 +52,26 @@ textarea {
     height: 120px;
     resize: vertical; 
 }
+
+.query-check {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .query-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .query-option input {
+    accent-color: #008080; 
+    width: 18px;
+    height: 18px;
+  }
+  
