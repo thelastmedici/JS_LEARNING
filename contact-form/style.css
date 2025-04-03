@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 *{
  margin: 0;
  padding: 0;
@@ -19,7 +20,7 @@ body{
 .container{
     width: 100%;
     height: auto;
-    max-width: 375px;
+    max-width: 300px;
     padding: 14px;
     margin: 30px;
     border-radius:15px;
@@ -31,14 +32,17 @@ h1{
     margin-bottom: 2rem;
     font-size: 2rem;
 }
+
 h2{
     color: hsl(187, 24%, 22%);
     margin: .5rem 0rem .5rem 0rem;
     font-size: 0.75rem;
 }
+
 h2 >span{
     color:hsl(186, 15%, 59%);
 }
+
 input, textarea {
     width: 100%;
     height: 45px;
@@ -49,7 +53,7 @@ input, textarea {
 }
 
 textarea {
-    height: 120px;
+    height: 180px;
     resize: vertical; 
 }
 
@@ -57,9 +61,10 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
   }
   
-  .query-option {
+.query-option {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -67,11 +72,34 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
+
   
-  .query-option input {
+.query-option input {
     accent-color: #008080; 
     width: 18px;
     height: 18px;
-  }
-  
+    border: 1.75px solid hsl(186, 15%, 59%);
+}
+.message >textarea{
+    width: 100%;
+    height: 180px;
+    border: 1.75px solid hsl(186, 15%, 59%);
+}
+.consent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+}
+.consent >input{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.message >textarea{
+    width: 100%;
+    height: 300px;
+    border: 1.75px solid hsl(186, 15%, 59%);
+}label{
+    border: 1.75px solid hsl(186, 15%, 59%);
+}
