@@ -53,9 +53,8 @@ input, textarea {
 }
 
 
-input:focus {
-    outline: none;
-    border: 1.75px hsl(187, 24%, 22%);
+input:focus  textarea:focus{
+    border: 1.75px hsl(347, 63%, 25%);
 }
 
 textarea {
@@ -130,4 +129,10 @@ button{
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        max-width: 600px;
+    }
+    
 }
