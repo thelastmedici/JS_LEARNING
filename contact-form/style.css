@@ -130,7 +130,7 @@ button{
     font-size: 1rem;
     cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1440px){
     body{
         height: 100vh;
         padding: 0;
