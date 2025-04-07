@@ -143,12 +143,12 @@ button{
         
     }
     .container{
-        width: 500px;
+        width: 600px;
         max-width: 600px;
         display: flex;
         flex-direction: column;
         margin: auto;
-        height: 80%;
+        height: auto;
     }
     .name{
         width: 100%;
