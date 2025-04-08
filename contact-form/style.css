@@ -100,10 +100,10 @@ textarea {
     width: 18px;
     height: 18px;
     margin-right: 10px;
+    accent-color: hsl(169, 82%, 27%);
 }
 
 .consent P{
-    
     color: hsl(187, 24%, 22%);
 }
 .message >textarea{
