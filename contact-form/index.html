@@ -17,16 +17,19 @@
       <div class="F-name">
         <h2>First Name  <span>*</span></h2>
         <input type="text" required>
+        <p id="name-error" class="error-message"></p>
       </div>
       <!-- This field is required -->
       <div class="L-name">
         <h2>Last Name <span>*</span></h2>
         <input type="text" required>
+        <p id="name-error" class="error-message"></p>
       </div>
     </div>
     <!-- This field is required -->
     <h2>Email Address <span>*</span></h2>
     <input type="email" required>
+    <p id="email-error" class="error-message">enter email</p>
     <!-- Please enter a valid email address -->
     <!-- This field is required -->
     <div class="query-section">
@@ -35,20 +38,22 @@
         <label class="query-option">
           <input type="radio", name="queryType" value="General Inquiry" required>
           <span>General Enquiry</span>
+          
         </label>
-
+        
         <label class="query-option">
           <input type="radio" name="queryType" value="Support Request" required>
           <span>Support Request</span>
         </label>
       </div>
+      <p class="error-message"></p>
     </div>
     
     <!-- Please select a query type -->
     <div class="message">
       <h2>Message <span>*</span></h2>
       <textarea required></textarea>
-      <!-- This field is required -->
+      <p class="error-message"></p>
     </div>
   <div class="consent">
     <input type="checkbox" name="queryType" required>
@@ -56,6 +61,7 @@
     <p>I consent to being contacted by the team *</p>
        <!-- To submit this form, please consent to being contacted -->
   </div>
+  <p class="error-message"></p>
    
   <div class="submit">
     <button type="submit">Submit</button>
@@ -67,6 +73,7 @@
     <!-- Thanks for completing the form. We'll be in touch soon! -->
     
   </div>
+  
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
