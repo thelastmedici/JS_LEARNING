@@ -17,43 +17,43 @@
       <div class="F-name">
         <h2>First Name  <span>*</span></h2>
         <input type="text" required>
-        <p id="name-error" class="error-message"></p>
+        <p id="error" class="error-message">This field is required</p>
       </div>
       <!-- This field is required -->
       <div class="L-name">
         <h2>Last Name <span>*</span></h2>
         <input type="text" required>
-        <p id="name-error" class="error-message"></p>
+        <p id="error" class="error-message">This field is required</p>
       </div>
     </div>
     <!-- This field is required -->
     <h2>Email Address <span>*</span></h2>
     <input type="email" required>
-    <p id="email-error" class="error-message">enter email</p>
+    <p id="error" class="error-message">Please enter a valid email address</p>
     <!-- Please enter a valid email address -->
     <!-- This field is required -->
     <div class="query-section">
       <h2>Query Type <span>*</span></h2>
       <div class="query-check">
         <label class="query-option">
-          <input type="radio", name="queryType" value="General Inquiry" required>
+          <input type="radio", name="queryType" class="radio1" value="General Inquiry" required>
           <span>General Enquiry</span>
           
         </label>
         
         <label class="query-option">
-          <input type="radio" name="queryType" value="Support Request" required>
+          <input type="radio" name="queryType"  class="radio2" value="Support Request" required>
           <span>Support Request</span>
         </label>
       </div>
-      <p class="error-message"></p>
+      <p class="error-message">Please select a query type</p>
     </div>
     
     <!-- Please select a query type -->
     <div class="message">
       <h2>Message <span>*</span></h2>
       <textarea required></textarea>
-      <p class="error-message"></p>
+      <p class="error-message">THis field is required</p>
     </div>
   <div class="consent">
     <input type="checkbox" name="queryType" required>
@@ -61,7 +61,7 @@
     <p>I consent to being contacted by the team *</p>
        <!-- To submit this form, please consent to being contacted -->
   </div>
-  <p class="error-message"></p>
+  <p class="error-message">To submit this form, please consent to being contacted</p>
    
   <div class="submit">
     <button type="submit">Submit</button>
