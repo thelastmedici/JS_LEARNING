@@ -17,19 +17,19 @@
       <div class="F-name">
         <h2>First Name  <span>*</span></h2>
         <input type="text" required>
-        <p id="fnameError" class="error-message">This field is required</p>
+        <span id="fnameError" class="error-message">This field is required</span>
       </div>
       <!-- This field is required -->
       <div class="L-name">
         <h2>Last Name <span>*</span></h2>
         <input type="text" required>
-        <p id="lnameError" class="error-message">This field is required</p>
+        <span id="lnameError" class="error-message">This field is required</span>
       </div>
     </div>
     <!-- This field is required -->
     <h2>Email Address <span>*</span></h2>
     <input type="email" required>
-    <p id="emailError" class="error-message">Please enter a valid email address</p>
+    <span id="emailError" class="error-message">Please enter a valid email address</span>
     <!-- Please enter a valid email address -->
     <!-- This field is required -->
     <div class="query-section">
@@ -37,23 +37,23 @@
       <div class="query-check">
         <label class="query-option">
           <input type="radio", name="queryType" class="radio1" value="General Inquiry" required>
-          <span>General Enquiry</span>
+          <p>General Enquiry</p>
           
         </label>
         
         <label class="query-option">
           <input type="radio" name="queryType"  class="radio2" value="Support Request" required>
-          <span>Support Request</span>
+          <p>Support Request</p>
         </label>
       </div>
-      <p class="error-message">Please select a query type</p>
+      <span class="error-message">Please select a query type</span>
     </div>
     
     <!-- Please select a query type -->
     <div class="message">
       <h2>Message <span>*</span></h2>
       <textarea required></textarea>
-      <p class="error-message">THis field is required</p>
+      <span class="error-message">THis field is required</span>
     </div>
   <div class="consent">
     <input type="checkbox" name="queryType" required>
@@ -61,7 +61,7 @@
     <p>I consent to being contacted by the team *</p>
        <!-- To submit this form, please consent to being contacted -->
   </div>
-  <p class="error-message">To submit this form, please consent to being contacted</p>
+  <span class="error-message">To submit this form, please consent to being contacted</span>
    
   <div class="submit">
     <button type="submit">Submit</button>
