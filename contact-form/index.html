@@ -52,8 +52,8 @@
     <!-- Please select a query type -->
     <div class="message">
       <h2>Message <span>*</span></h2>
-      <textarea required></textarea>
-      <span class="error-message">THis field is required</span>
+      <textarea  required></textarea>
+      <span id="msgError" class="error-message">This field is required</span>
     </div>
   <div class="consent">
     <input type="checkbox" name="queryType" required>
@@ -61,13 +61,11 @@
     <p>I consent to being contacted by the team *</p>
        <!-- To submit this form, please consent to being contacted -->
   </div>
-  <span class="error-message">To submit this form, please consent to being contacted</span>
+  <span id ="consentError" class="error-message">To submit this form, please consent to being contacted</span>
    
   <div class="submit">
     <button type="submit">Submit</button>
     <!-- Submit -->
-  
-    
     <!-- Submit -->
     <!-- Message Sent! -->
     <!-- Thanks for completing the form. We'll be in touch soon! -->
