@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const lName = document.querySelector('.L-name');
   const lNameInput = lName.querySelector('input');
 
+
   const emailInput = document.querySelector('input[type="email"]');
   const radio1 = document.querySelector('.radio1');
   const radio2 = document.querySelector('.radio2');
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if(lNameInput.value.trim() === ""){
     lNameInput.classList.add('input-error');
-    fNameError.textContent = "This field is required";
+    lNameError.textContent = "This field is required";
     isvalid = false;
   }
 
