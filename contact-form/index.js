@@ -6,17 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
   const radio2 = document.querySelector('.radio2');
   const messageTextarea = document.querySelector('.message textarea');
   const consentChheck = document.querySelector('input[type="checkbox"]');
+
   const fNameError = document.getElementById("#fnameError");
   const lNameError = document.getElementById("#lnameError");
   const emailError = document.getElementById("#emailError");
-  const msgError = document.getElementById('#msgError')
+  const msgError = document.getElementById('#msgError');
+  const consentError = document.getElementById('#consentError');
   
 
-   const submitBtn = document.querySelector('button');
-   submitBtn.addEventListener('click', function(e){
-   e.preventDefault();
-   [fNameError,lNameError,emailError,msgError]
-   
+  
+  const submitBtn = document.querySelector('button');
+  submitBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  [fNameError,lNameError,emailError,msgError, consentError].forEach(error => error.textContent= "");
+     
   
 
   });
