@@ -3,30 +3,36 @@ document.addEventListener('DOMContentLoaded', function() {
   const $ = (selector) =>document.querySelector(selector);
   
   const fields = {
-    fName:{
-      input: $('.F-name input'),
-      error:$('#fnameError'),
-      container:$('.F-name')
-    },
+      fName:{
+        input: $('.F-name input'),
+        error:$('#fnameError'),
+        container:$('.F-name')
+      },
 
-    lName:{
-      input:$('.L-name input'),
-      error:$('#lnameError'),
-      container:$('.L-name'),
-    },
+      lName:{
+        input:$('.L-name input'),
+        error:$('#lnameError'),
+        container:$('.L-name'),
+      },
+      
+      email:{
+        input:$('input[type="email"]'),
+        error:$('#emialError'),
+      },
+      message:{
+        input:$('.message textarea'),
+        error:$('#msgError'),
+      },
+      consent:{
+        input:$('input[type="checkbox"]'),
+        error:$('#consentError'),
+      }
+  };
+  const radios = [$('.radio1'), $('.radio2')];
+
+  const clearErrors = () =>{
     
-    email:{
-      input:$('input[type="email"]'),
-      error:$('#emialError'),
-    },
-    message:{
-      input:$('.message textarea'),
-      error:$('#msgError'),
-    },
-    consent:{
-      input:$('input[type="checkbox"]'),
-      error:$('#consentError'),
-    }
   }
+
 
   });
