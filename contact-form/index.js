@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   //create helper function
-  const $ = (selector) =>document.querySelector(selector);
+  const $ = (selector) => document.querySelector(selector);
   
   const fields = {
       fName:{
@@ -31,8 +31,40 @@ document.addEventListener('DOMContentLoaded', function() {
   const radios = [$('.radio1'), $('.radio2')];
 
   const clearErrors = () =>{
-    
-  }
+    Object.values(fields).forEach(({ input, error, container }) => {
+      if (error) error.textContent = '';
+      if (input) input.classList.remove('input-error');
+      if (container) container.classList.remove('input-error');
+    });
+
+    radios.forEach(radio=> radio.classList.remove('.input-error'));
+
+  };
+
+   const validationRequired = (fieldKey, message= "This field is required") => {
+    const {input, error, container} =fields[fieldKey];
+    if(input && input.value.trim() === ""){
+      if(error) error.textContent = message;
+      if(input) input.classList.add('input-error');
+      // if(container) container.classList.add('input-error');
+      return false;
+    }
+    return true;
+   };
+
+   $('button').addEventListener('click', function(e){
+    e.preventDefault();
+    clearErrors();
+
+    let isValid = true;
+
+    ['fName', 'lName'].forEach(field =>{
+      if(!validationRequired(field)){
+        isValid = false;
+      }
+    });
+
+   })
 
 
   });
