@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       email:{
         input:$('input[type="email"]'),
-        error:$('#emialError'),
+        error:$('#emailError'),
       },
       message:{
         input:$('.message textarea'),
@@ -52,21 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
     return true;
    };
    //validate email
-   const validateEmail = () =>{
-    const {input, error} = fields.email;
-    const emailValue = input.value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailValue === ""){
-       error.textContent = "Please enter a valid email address"
-       input.classList.add('input-error');
-       return false;
-    }else if (!emailPattern.test(emailValue)){
-       error.textContent = "Please enter a valid email address"
-       input.classList.add('input-error');
-       return false;
-    }
-    return true
-   };
+    const validateEmail = () => {
+      const { input, error} = fields.email;
+      const emailValue = input.value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if(emailValue === "" || !emailPattern.test(emailValue)){
+        error.textContent = "Please enter a valid email address"
+        input.classList.add("input-error");
+        return false;
+      }
+      return true;
+    };
 
    $('button').addEventListener('click', function(e){
     e.preventDefault();
@@ -80,6 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
+     if(!validateEmail()){
+      isValid = false;
+     }
    })
 
 
