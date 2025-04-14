@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     radios.forEach(radio=> radio.classList.remove('.input-error'));
 
   };
-
+  //validate required fields
    const validationRequired = (fieldKey, message= "This field is required") => {
     const {input, error, container} =fields[fieldKey];
     if(input && input.value.trim() === ""){
@@ -50,6 +50,22 @@ document.addEventListener('DOMContentLoaded', function() {
       return false;
     }
     return true;
+   };
+   //validate email
+   const validateEmail = () =>{
+    const {input, error} = fields.email;
+    const emailValue = input.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailValue === ""){
+       error.textContent = "Please enter a valid email address"
+       input.classList.add('input-error');
+       return false;
+    }else if (!emailPattern.test(emailValue)){
+       error.textContent = "Please enter a valid email address"
+       input.classList.add('input-error');
+       return false;
+    }
+    return true
    };
 
    $('button').addEventListener('click', function(e){
