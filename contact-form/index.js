@@ -89,6 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
      if(!validateEmail()){
       isValid = false;
      }
+     if(!validateQuery()){
+      isValid = false;
+     }
    })
 
 
