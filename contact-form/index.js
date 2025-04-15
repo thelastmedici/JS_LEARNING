@@ -64,6 +64,16 @@ document.addEventListener('DOMContentLoaded', function() {
       return true;
     };
 
+    const validateQuery = () =>{
+      const isAnyChecked = radios.some(radio => radio.checked);
+      if(!isAnyChecked){
+        error.textContent ="Please Select a query type"
+      } else{
+        error.textContent = "";
+      }
+
+    };
+
    $('button').addEventListener('click', function(e){
     e.preventDefault();
     clearErrors();
