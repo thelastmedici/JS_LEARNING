@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
       consent:{
         input:$('input[type="checkbox"]'),
         error:$('#consentError'),
+      },
+      query:{
+         error:document.querySelector('.query-section .error-message')
       }
   };
   const radios = [$('.radio1'), $('.radio2')];
@@ -67,11 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const validateQuery = () =>{
       const isAnyChecked = radios.some(radio => radio.checked);
       if(!isAnyChecked){
-        error.textContent ="Please Select a query type"
-      } else{
-        error.textContent = "";
-      }
-
+        if(fields.query.error){
+          fields.query.error.textContent = "Please select a query type.";
+        }
+        radios.forEach(radio => radio.classList.add('error-message'));
+        return false;
+      } 
+      return true;
     };
 
    $('button').addEventListener('click', function(e){
