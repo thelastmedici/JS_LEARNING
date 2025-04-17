@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   //create helper function
   const $ = (selector) => document.querySelector(selector);
+  const successState = document.getElementById('.success-state')
   
   const fields = {
       fName:{
@@ -31,8 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
          error:document.querySelector('.query-section .error-message')
       }
   };
-  const radios = [$('.radio1'), $('.radio2')];
 
+  
+  const radios = [$('.radio1'), $('.radio2')];
   const clearErrors = () =>{
     Object.values(fields).forEach(({ input, error, container }) => {
       if (error) error.textContent = '';
