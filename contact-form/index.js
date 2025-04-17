@@ -43,18 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
     radios.forEach(radio=> radio.classList.remove('.input-error'));
 
   };
-  //validate required fields
+
    const validationRequired = (fieldKey, message= "This field is required") => {
     const {input, error, container} =fields[fieldKey];
     if(input && input.value.trim() === ""){
       if(error) error.textContent = message;
       if(input) input.classList.add('input-error');
-      // if(container) container.classList.add('input-error');
       return false;
     }
     return true;
    };
-   //validate email
+
     const validateEmail = () => {
       const { input, error} = fields.email;
       const emailValue = input.value.trim();
@@ -79,6 +78,18 @@ document.addEventListener('DOMContentLoaded', function() {
       return true;
     };
 
+    //message validation
+    const validateMsg = () => {
+     const {input, error} = fields.message;
+     if(input.value.trim() === ""){
+      error.textContent = "The field is required";
+      input.classList.add('input-error');
+      return false;
+     }
+     return true;
+     
+    };
+ 
    $('button').addEventListener('click', function(e){
     e.preventDefault();
     clearErrors();
@@ -95,6 +106,9 @@ document.addEventListener('DOMContentLoaded', function() {
       isValid = false;
      }
      if(!validateQuery()){
+      isValid = false;
+     }
+     if(!validateMsg()){
       isValid = false;
      }
    })
