@@ -92,6 +92,16 @@ document.addEventListener('DOMContentLoaded', function() {
      return true;
      
     };
+
+    const validateConsent = () =>{
+      const {input, error} = fields.consent;
+      const checkedInput = input.checked;
+      if(!checkedInput){
+        error.textContent ="To submit this form, please consent to being contacted "
+        return false;
+      }
+      return true;
+    }
  
    $('button').addEventListener('click', function(e){
     e.preventDefault();
@@ -112,6 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
       isValid = false;
      }
      if(!validateMsg()){
+      isValid = false;
+     }
+     if(!validateConsent()){
       isValid = false;
      }
    })
