@@ -102,6 +102,27 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       return true;
     }
+
+    // reset form  function
+    const clearForm = () =>{
+      Object.values(fields).forEach(({input, container}) => {
+        if(input) input.value = "";
+        if(input && input.type === 'checkbox'){
+          input.checked = false;
+        }
+        if(container){
+          container.classList.remove('input-error');
+        }
+      });
+
+      radios.forEach(radio => radio.checked = false);
+      fields.query.error.textContent = "";
+      successState.style.display="block";
+      setTimeout(()=>{
+        successState.style.display = "none";
+      }, 5000);
+
+    }
  
    $('button').addEventListener('click', function(e){
     e.preventDefault();
@@ -127,7 +148,13 @@ document.addEventListener('DOMContentLoaded', function() {
      if(!validateConsent()){
       isValid = false;
      }
+     
+    // Submit and show success fom
+    if (isValid){
+      clearForm();
+      
+      
+     }
    })
-
-
+    
   });
