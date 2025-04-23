@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/output.css">
   
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
@@ -18,7 +18,7 @@
     </div>
     <div class="container">
       <header>
-        <h1>Build The Community Your Fans Will Love</h1>
+        <h1 class="px-300">Build The Community Your Fans Will Love</h1>
         <p>
           Huddle re-imagines the way we build communities. You have a voice, but so does
           your audience. Create connections with your users as you engage in genuine discussion.
@@ -78,9 +78,12 @@
         <p>
           To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
           send you spam or pass on your email address.
-          <input type="email" name="" id="">
+          
         </p>
-        Subscribe
+        <form action="#" class="subcribe">
+          <input type="email" name="" id="">
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
 
       <div class="contact">
@@ -90,7 +93,8 @@
           vestibulum a, ultrices quis sem.
         </p>
         
-        <div class="phone-no"><img src="./images/" alt="">Phone: +1-543-123-4567</div>
+        <div class="phone-no"><img src="./images/icon-phone.svg" alt="Phone">Phone: +1-543-123-4567</div>
+
         example@huddle.com
       </div>
      
