@@ -34,3 +34,35 @@ The designs were created to the following widths:
 - Weights: 400, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./dist/output.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body class="">
+
+  You’ve used 815 GB of your storage
+
+  185 GB Left
+  
+  0 GB
+  1000 GB
+  
+  <div class="attribution">
+    Coded by <a href="https://github.com/thelastmedici">thelastmedici</a>.
+  </div>
+</body>
+</html>
