@@ -11,6 +11,7 @@
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-black: #000;
     --color-white: #fff;
+    --spacing: 0.25rem;
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --default-font-family: var(--font-sans);
@@ -167,23 +168,8 @@
   .static {
     position: static;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
   }
   .contents {
     display: contents;
@@ -194,14 +180,20 @@
   .table {
     display: table;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-screen {
     height: 100vh;
   }
   .flex-col {
     flex-direction: column;
-  }
-  .place-content-center {
-    place-content: center;
   }
   .items-center {
     align-items: center;
@@ -215,15 +207,11 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-white {
-    background-color: var(--color-white);
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
   }
   .font-raleway {
     font-family: var(--font-raleway);
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-white {
     color: var(--color-white);
