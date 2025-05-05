@@ -179,6 +179,9 @@
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .block {
     display: block;
   }
@@ -216,6 +219,12 @@
     border-style: var(--tw-border-style);
     border-width: 4px;
   }
+  .bg-\[hsl\(228\,56\%\,26\%\)\] {
+    background-color: hsl(228,56%,26%);
+  }
+  .bg-\[hsl\(229\,7\%\,55\%\)\] {
+    background-color: hsl(229,7%,55%);
+  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -234,8 +243,17 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
+  }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
+  }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
   }
   .font-raleway {
     font-family: var(--font-raleway);
