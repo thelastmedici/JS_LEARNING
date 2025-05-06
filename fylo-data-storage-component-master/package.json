@@ -2,11 +2,11 @@
   "name": "fylo-data-storage-component-master",
   "version": "1.0.0",
   "description": "![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/style.css -o ./src/output.css --watch"
   },
-  "author": "",
+  "author": "github.com/thelastmedici",
   "license": "ISC"
 }
