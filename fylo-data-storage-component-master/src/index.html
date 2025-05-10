@@ -29,7 +29,7 @@
       </div> 
     </div>
 
-    <div class="lower-card w-[315px] bg-[hsl(228,56%,26%)] mx-6 mt-5 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg">
+    <div class="relative lower-card w-[315px] h-[165px] bg-[hsl(228,56%,26%)] mx-6 mt-5 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg">
       <p class="text-sm text-center pt-8 pb-4">You’ve used <span class="font-bold">815 GB</span> of your storage</p>
         <div class="relative w-[270px] mx-5 h-5 bg-[hsl(229,_57%,_11%)] rounded-full overflow-hidden">
           <div class="h-4 w-[75%] top-0.5 left-0.5  bg-gradient-to-r from-pink-300 via-pink-500 to-fuchsia-600 rounded-full relative">
@@ -37,13 +37,18 @@
             </div>
         </div>
 
-      <div><span class="text-black font-bold ">185</span> GB Left</div>
+        <div class="flex justify-between px-5 pt-2 text-xs font-bold text-white">
+          <div>0 GB</div>
+          <div>1000 GB</div>
+        </div>
+
+        <div class="absolute left-1/2 transform -translate-x-1/2 bottom-[-40px] w-[190px] h-[75px] bg-white px-5 py-2  rounded-xl shadow-md flex items-baseline  space-x-1">
+          <span class="text-5xl font-bold text-[hsl(229,_57%,_11%)]">185</span>
+          <span class="text-xs text-gray-400 tracking-wider font-semibold">GB LEFT</span>
+        </div>
       
       
-      <div>
-        0 GB
-        1000 GB
-      </div>
+      
     </div>
   </div>
   
