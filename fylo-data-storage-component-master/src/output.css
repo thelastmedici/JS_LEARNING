@@ -21,8 +21,6 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
@@ -477,16 +475,6 @@
       bottom: 90px;
     }
   }
-  .md\:left-0 {
-    @media (width >= 48rem) {
-      left: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:mx-5 {
-    @media (width >= 48rem) {
-      margin-inline: calc(var(--spacing) * 5);
-    }
-  }
   .md\:mx-6 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 6);
@@ -562,24 +550,19 @@
       background-repeat: no-repeat;
     }
   }
-  .md\:px-10 {
+  .md\:py-2 {
     @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 10);
+      padding-block: calc(var(--spacing) * 2);
     }
   }
-  .md\:px-64 {
+  .md\:py-4 {
     @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 64);
+      padding-block: calc(var(--spacing) * 4);
     }
   }
-  .md\:px-\[-10\] {
+  .md\:py-5 {
     @media (width >= 48rem) {
-      padding-inline: -10;
-    }
-  }
-  .md\:px-\[-10px\] {
-    @media (width >= 48rem) {
-      padding-inline: -10px;
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .md\:text-left {
@@ -596,11 +579,6 @@
   .md\:text-\[10px\] {
     @media (width >= 48rem) {
       font-size: 10px;
-    }
-  }
-  .md\:text-\[12px\] {
-    @media (width >= 48rem) {
-      font-size: 12px;
     }
   }
   .lg\:w-6xl {
