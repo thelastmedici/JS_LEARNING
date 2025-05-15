@@ -470,6 +470,26 @@
       top: calc(var(--spacing) * 0);
     }
   }
+  .md\:top-6 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:top-\[-30px\] {
+    @media (width >= 48rem) {
+      top: -30px;
+    }
+  }
+  .md\:top-\[30px\] {
+    @media (width >= 48rem) {
+      top: 30px;
+    }
+  }
+  .md\:bottom-3 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 3);
+    }
+  }
   .md\:bottom-\[90px\] {
     @media (width >= 48rem) {
       bottom: 90px;
@@ -558,11 +578,6 @@
   .md\:py-4 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:py-5 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 5);
     }
   }
   .md\:text-left {
