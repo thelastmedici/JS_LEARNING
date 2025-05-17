@@ -37,7 +37,7 @@
     </div>
 
     <div class="relative lower-card w-[315px] md:max-w-[270px] h-[150px] md:h-[110px] bg-[hsl(228,56%,26%)] mx-6 mt-5 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg md:flex-1 md:top-[-30px] md:mr-15">
-        <div class="md:py-4">
+        <div class="md:py-4 py-4">
           <p class="text-sm md:text-[10px]  text-center md:text-left md:mx-6 md:py-2 pt-2 pb-2">You’ve used <span class="font-bold">815 GB</span> of your storage</p>
           <div class="relative w-[270px] md:w-[220px] mx-5 h-5 bg-[hsl(229,_57%,_11%)] rounded-full overflow-hidden">
             <div class="h-4 w-[75%] top-0.5 left-0.5  bg-gradient-to-r from-pink-300 via-pink-500 to-fuchsia-600 rounded-full relative">
@@ -49,13 +49,21 @@
             <div class="ml-40">1000 GB</div>
           </div>
         </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 bottom-[-40px] md:bottom-[90px] w-[190px] md:w-[120px] h-[75px] md:h-[50px] md:ml-12 bg-white px-5 py-2 md:rounded-tl-xl md:rounded-bl-xl md:rounded-tr-xl  shadow-md flex items-baseline space-x-1">
-          <span class="text-5xl md:text-3xl md:ml-[-9px] font-bold text-[hsl(229,_57%,_11%)]">185</span>
-          <span class="text-xs md:text-[8px] md:relative md:-top-2 text-gray-400 tracking-wider font-semibold">GB LEFT</span>
-          <!--tail pointer-->
-         
-          <div class="absolute bottom-0 right-0 translate-y-full border-t-[14px] border-t-white border-l-[14px] border-l-transparent border-r-[0px] border-r-transparent"></div>
-        </div>
+
+            <div class="relative inline-flex items-baseline space-x-1 bg-white px-5 py-3  mx-5 ml-20
+                rounded-xl md:rounded-tl-xl md:rounded-tr-xl md:rounded-bl-xl md:rounded-br-none 
+                shadow-md">
+      
+            <span class="text-3xl font-bold text-[hsl(229,_57%,_11%)]">185</span>
+            <span class="text-xs text-gray-400 tracking-wider font-semibold">GB LEFT</span>
+
+            <!-- Triangle Tail - only visible on md and up -->
+            <div class="hidden md:block absolute bottom-0 right-0 translate-y-full 
+                        border-t-[14px] border-t-white 
+                        border-l-[14px] border-l-transparent 
+                        border-r-0 border-r-transparent"></div>
+          </div>
+
 
          
     </div>
