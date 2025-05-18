@@ -543,29 +543,14 @@
       margin-top: calc(var(--spacing) * -38);
     }
   }
-  .md\:mr-6 {
-    @media (width >= 48rem) {
-      margin-right: calc(var(--spacing) * 6);
-    }
-  }
   .md\:mr-15 {
     @media (width >= 48rem) {
       margin-right: calc(var(--spacing) * 15);
     }
   }
-  .md\:mr-40 {
-    @media (width >= 48rem) {
-      margin-right: calc(var(--spacing) * 40);
-    }
-  }
   .md\:mb-45 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 45);
-    }
-  }
-  .md\:ml-16 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 16);
     }
   }
   .md\:ml-20 {
@@ -576,21 +561,6 @@
   .md\:ml-22 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 22);
-    }
-  }
-  .md\:ml-25 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 25);
-    }
-  }
-  .md\:ml-30 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 30);
-    }
-  }
-  .md\:ml-50 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 50);
     }
   }
   .md\:block {
@@ -709,19 +679,84 @@
       background-image: url('../images/bg-desktop.png');
     }
   }
+  .md\:bg-\[bottom_10px_left_-10px\] {
+    @media (width >= 48rem) {
+      background-position: bottom 10px left -10px;
+    }
+  }
+  .md\:bg-\[bottom_10px_left_-20px\] {
+    @media (width >= 48rem) {
+      background-position: bottom 10px left -20px;
+    }
+  }
+  .md\:bg-\[bottom_10px_left_-30px\] {
+    @media (width >= 48rem) {
+      background-position: bottom 10px left -30px;
+    }
+  }
+  .md\:bg-\[bottom_10px_left_-90px\] {
+    @media (width >= 48rem) {
+      background-position: bottom 10px left -90px;
+    }
+  }
+  .md\:bg-\[bottom_10px_left_-100px\] {
+    @media (width >= 48rem) {
+      background-position: bottom 10px left -100px;
+    }
+  }
+  .md\:bg-\[position\:bottom_-1px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -1px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_-2px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -2px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_-8px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -8px left;
+    }
+  }
   .md\:bg-\[position\:bottom_-40px_left\] {
     @media (width >= 48rem) {
       background-position: bottom -40px left;
     }
   }
+  .md\:bg-\[position\:bottom_-80px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -80px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_-200px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -200px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_-800px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -800px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_-8000px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom -8000px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_2px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom 2px left;
+    }
+  }
+  .md\:bg-\[position\:bottom_200px_left\] {
+    @media (width >= 48rem) {
+      background-position: bottom 200px left;
+    }
+  }
   .md\:bg-no-repeat {
     @media (width >= 48rem) {
       background-repeat: no-repeat;
-    }
-  }
-  .md\:px-16 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 16);
     }
   }
   .md\:py-2 {
@@ -737,11 +772,6 @@
   .md\:pt-5 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 5);
-    }
-  }
-  .md\:pl-10 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 10);
     }
   }
   .md\:text-left {
