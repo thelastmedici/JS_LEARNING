@@ -454,12 +454,6 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-35 {
-    padding-block: calc(var(--spacing) * 35);
-  }
-  .py-48 {
-    padding-block: calc(var(--spacing) * 48);
-  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
@@ -539,24 +533,9 @@
       margin-inline: calc(var(--spacing) * 6);
     }
   }
-  .md\:-mt-11 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * -11);
-    }
-  }
   .md\:-mt-18 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * -18);
-    }
-  }
-  .md\:mt-7 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 7);
-    }
-  }
-  .md\:mt-16 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 16);
     }
   }
   .md\:mr-15 {
@@ -564,29 +543,9 @@
       margin-right: calc(var(--spacing) * 15);
     }
   }
-  .md\:mb-7 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 7);
-    }
-  }
-  .md\:mb-17 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 17);
-    }
-  }
-  .md\:mb-32 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 32);
-    }
-  }
   .md\:mb-45 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 45);
-    }
-  }
-  .md\:mb-50 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 50);
     }
   }
   .md\:block {
@@ -723,11 +682,6 @@
   .md\:pt-5 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 5);
-    }
-  }
-  .md\:pt-16 {
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 16);
     }
   }
   .md\:text-left {
