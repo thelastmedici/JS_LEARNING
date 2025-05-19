@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  //create helper function
+  
   const $ = (selector) => document.querySelector(selector);
   const successState = $('.success-state')
   successState.style.display = 'none'
