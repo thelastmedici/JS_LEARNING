@@ -170,13 +170,6 @@
   .table {
     display: table;
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;

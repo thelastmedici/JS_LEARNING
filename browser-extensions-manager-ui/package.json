@@ -4,7 +4,7 @@
   "description": "browser-extensions-manager-ui",
   "main": "index.js",
   "scripts": {
-    "test": "npm run dev"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "repository": {
     "type": "git",
