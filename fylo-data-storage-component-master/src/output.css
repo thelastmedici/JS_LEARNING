@@ -21,6 +21,8 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
@@ -238,8 +240,23 @@
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
   }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
+  }
   .ml-40 {
     margin-left: calc(var(--spacing) * 40);
+  }
+  .ml-43 {
+    margin-left: calc(var(--spacing) * 43);
+  }
+  .ml-45 {
+    margin-left: calc(var(--spacing) * 45);
+  }
+  .ml-50 {
+    margin-left: calc(var(--spacing) * 50);
+  }
+  .ml-65 {
+    margin-left: calc(var(--spacing) * 65);
   }
   .block {
     display: block;
@@ -609,6 +626,11 @@
       width: calc(var(--spacing) * 20);
     }
   }
+  .md\:w-\[200px\] {
+    @media (width >= 48rem) {
+      width: 200px;
+    }
+  }
   .md\:w-\[220px\] {
     @media (width >= 48rem) {
       width: 220px;
@@ -710,34 +732,19 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
+  .md\:text-\[7px\] {
+    @media (width >= 48rem) {
+      font-size: 7px;
+    }
+  }
   .md\:text-\[10px\] {
     @media (width >= 48rem) {
       font-size: 10px;
     }
   }
-  .lg\:mt-4 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 4);
-    }
-  }
   .lg\:mt-13 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 13);
-    }
-  }
-  .lg\:mt-15 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 15);
-    }
-  }
-  .lg\:mt-20 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:mt-80 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 80);
     }
   }
   .lg\:mr-40 {
@@ -768,6 +775,11 @@
   .lg\:w-30 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:w-\[330px\] {
+    @media (width >= 64rem) {
+      width: 330px;
     }
   }
   .lg\:w-\[400px\] {
@@ -813,6 +825,11 @@
   .lg\:pt-5 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:text-\[12px\] {
+    @media (width >= 64rem) {
+      font-size: 12px;
     }
   }
 }
