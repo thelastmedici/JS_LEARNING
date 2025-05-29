@@ -181,9 +181,6 @@
   .flex {
     display: flex;
   }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
