@@ -11,7 +11,7 @@
   <title>Meet landing page</title>
 </head>
 
-<body class="bg-white w-[375px]  font-Montserrat p-0 m-0 box-border flex justify-center items-center overflow-x-hidden">
+<body class="bg-white w-[375px] font-Montserrat p-0 m-0 box-border flex justify-center items-center overflow-x-hidden">
   <div class="container h-auto flex flex-col">
     <div class="m-auto py-7">
       <img src="../assets/logo.svg" alt="meet-logo">  
@@ -57,18 +57,26 @@
         workspace. Control who can join with invite-only team access, data encryption, and data export.
       </p>
     </div>
-     <div class="flex flex-col items-center my-14">
+     <div class="  flex flex-col items-center my-14">
         <div class="h-20 w-px bg-gray-300"></div>
-        <div class="w-16 h-16 border-2 border-gray-300 rounded-full flex items-center justify-center bg-white text-gray-500 font-bold text-lg">
+        <div class="w-16 h-16 border-2 border-gray-300 rounded-full flex items-center justify-center bg-white text-gray-500 font-bold text-lg z-10">
               02
         </div>
    </div>
-    <div class="bg-[url('../assets/mobile/image-footer.jpg')]">
-      <p>
-        Experience more together
-        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-      </p>
-      <button>Download v1.3</button>
+    <div class="relative bg-cover  bg-[url('../assets/mobile/image-footer.jpg')] -top-17 w-[375px]">
+      <div class="absolute inset-0 bg-[oklch(60%_0.14_200)] opacity-80"></div>
+     <div class="relative z-10">
+       <div class="text-white text-center">
+       
+            <p class=" text-4xl font-extrabold  pt-12">Experience more together</p>
+       
+            <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+       </div>
+       
+        <div class="ml-17 py-7">
+        <a href="#" class="  bg-[oklch(60.6%_0.25_292.717)] py-5 px-6 w-[250px] text-center rounded-full text-white font-bold text-2xl">Download <span  class=" text-[oklch(82.8%_0.111_230.318)]">v1.3</span></a>
+           </div>
+     </div>
     </div>
   </div>
 </body>
