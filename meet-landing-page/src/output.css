@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-teal-200: oklch(91% 0.096 180.426);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -18,8 +17,6 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
@@ -202,6 +199,15 @@
   .m-auto {
     margin: auto;
   }
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-7 {
+    margin-inline: calc(var(--spacing) * 7);
+  }
   .my-14 {
     margin-block: calc(var(--spacing) * 14);
   }
@@ -247,6 +253,9 @@
   .w-px {
     width: 1px;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -258,6 +267,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -283,9 +298,6 @@
   }
   .bg-\[url\(\'\.\.\/assets\/mobile\/image-footer\.jpg\'\)\] {
     background-image: url('../assets/mobile/image-footer.jpg');
-  }
-  .bg-\[url\(\'\/home\/asiwaju\/Documents\/medici\/JS_LEARNING\/meet-landing-page\/assets\/mobile\/image-footer\.jpg\'\)\] {
-    background-image: url('/home/asiwaju/Documents/medici/JS_LEARNING/meet-landing-page/assets/mobile/image-footer.jpg');
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
