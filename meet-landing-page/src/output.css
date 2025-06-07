@@ -213,9 +213,6 @@
   .mx-7 {
     margin-inline: calc(var(--spacing) * 7);
   }
-  .mx-20 {
-    margin-inline: calc(var(--spacing) * 20);
-  }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
@@ -390,10 +387,6 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
